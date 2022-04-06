@@ -1,0 +1,94 @@
+from time import sleep
+Print('by hackproje')
+print('привет я помощник для взлома приложений')
+print('вы хотите продолжить?')
+print('если да то введите x в текущей строке')
+
+z = input('ввод: ')
+print(z)
+if z == 'x':
+    
+    print('напишите программу которую нужно взломать')
+    text1 = input('программа: ')
+    print('точно хотите продолжить')
+    print('если да то введите x в текущей строке')
+    text2 = input('ввод:')
+    print('введите 4210 чтоб потвердить што вы не робот')
+    x = input('введите код:')
+    print(x)
+    if x == '4210':
+        
+        def loadbar(iteration, total, prefix='', suffix='', decimals=1, length=100, fill='>'):
+            percent = ('{0:.' + str(decimals) + 'f}').format(100 * (iteration/float(total)))
+            filledLength = int(length * iteration // total)
+            bar = fill * filledLength + '-' * (length - filledLength)
+            print(f'\r{prefix} |{bar}| {percent}% {suffix}', end='\r')
+            if iteration == total:
+                print()
+        items = list(range(0, 50))
+        l = len(items)
+
+        loadbar(0, l, prefix='Progress:', suffix='complete', length=l)
+        for i, item in enumerate(items):
+            sleep(0.1)
+            loadbar(i + 1, l, prefix='Progress:', suffix='complete', length=l)
+
+        print('программа ' + text1 + ' успешно взломанна')
+        print('коммандная строка:')
+        print('чтоб показать список комманд напишите hellp')
+        while True:
+            
+            prog = input('~$~ ')
+            print(prog)
+            admin, crash, vzlom = ['sucessful get admin', 'sucessful crash', 'sucessful vzlom']
+            hellp, ban, unban = ['command: get admin, crash, vzlom, hellp, ban, unban', 'sucessful ban', 'unbanned']
+            r, t, y = [25, 50, 100]
+            pas = (':)')
+            if prog == 'get admin':
+                
+                vvod = input('введите кому дать админку: ')
+                print(vvod)
+                print(admin)
+            elif prog == 'crash':
+                
+                print(crash)
+            elif prog == 'hellp':
+                print(hellp)
+            elif prog == 'ban':
+                
+                bad = input('введите кого забанить: ')
+                bad2 = input('введите на какое время забанить')
+                print(ban)
+            elif prog == 'unban':
+                un = input('введите кого разбанить: ')
+                print(un)
+                print(un + ' ' + unban)
+            elif prog == 'vzlom':
+                cdcd = input('введите что/кого взломать: ')
+                print(cdcd)
+                
+                print(r)
+                print(t)
+                print(y)
+                print(vzlom)
+                print('команды управления ' + cdcd + ':  удалить-delete, спамить-spam')
+                cmd = input('~$~ ')
+                if cmd == 'delete':
+                    print(cdcd + ' delete')
+                elif cmd == 'spam':
+                    while True:
+                        print('spam')
+            elif prog == ':)':
+                while True:
+                    print(pas)
+                    
+                
+            else:
+                
+                print('комманда введина неправельно или ее нет')
+                print('введите hellp тоб увидеть список комманд')
+            
+    else:
+        print('не верный пароль')
+        stop2 = input('0')
+    #by hackproje
